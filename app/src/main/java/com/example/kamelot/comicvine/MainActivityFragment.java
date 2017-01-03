@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -29,6 +30,7 @@ public class MainActivityFragment extends Fragment {
         ListView lv_Collections = (ListView) view.findViewById(R.id.lv_Collections);
 
         names= new ArrayList<>();
+
         adapter = new ArrayAdapter<>(
                 getContext(),
                 R.layout.collections_row,
